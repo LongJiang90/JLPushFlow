@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F07B951AFBC57BC083D3F2E /* libPods-JLPushFlow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91966C1ABEA6E51CA60501D3 /* libPods-JLPushFlow.a */; };
+		A75E4267219AFE0300DEB32A /* SVProgressHUD+HUDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E4266219AFE0300DEB32A /* SVProgressHUD+HUDTools.m */; };
+		A75E426F219AFF7800DEB32A /* JLLiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E426E219AFF7800DEB32A /* JLLiveVC.m */; };
 		CAA51AB1B732E167948EDCBB /* libPods-JLPushFlowUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0154B644D84373BBF60EAA8 /* libPods-JLPushFlowUITests.a */; };
 		F6451A14219AB22100DE90B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6451A13219AB22100DE90B1 /* AppDelegate.m */; };
 		F6451A17219AB22100DE90B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6451A16219AB22100DE90B1 /* ViewController.m */; };
@@ -16,7 +18,6 @@
 		F6451A1F219AB22300DE90B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6451A1D219AB22300DE90B1 /* LaunchScreen.storyboard */; };
 		F6451A22219AB22300DE90B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6451A21219AB22300DE90B1 /* main.m */; };
 		F6451A2C219AB22300DE90B1 /* JLPushFlowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6451A2B219AB22300DE90B1 /* JLPushFlowUITests.m */; };
-		F6451A39219AC02500DE90B1 /* SVProgressHUD+HUDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F6451A38219AC02500DE90B1 /* SVProgressHUD+HUDTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,10 @@
 /* Begin PBXFileReference section */
 		7C6B1B85BE8FDE8F88DD72CF /* Pods-JLPushFlowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLPushFlowUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLPushFlowUITests/Pods-JLPushFlowUITests.release.xcconfig"; sourceTree = "<group>"; };
 		91966C1ABEA6E51CA60501D3 /* libPods-JLPushFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLPushFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75E4265219AFE0300DEB32A /* SVProgressHUD+HUDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+HUDTools.h"; sourceTree = "<group>"; };
+		A75E4266219AFE0300DEB32A /* SVProgressHUD+HUDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+HUDTools.m"; sourceTree = "<group>"; };
+		A75E426D219AFF7800DEB32A /* JLLiveVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLLiveVC.h; sourceTree = "<group>"; };
+		A75E426E219AFF7800DEB32A /* JLLiveVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLLiveVC.m; sourceTree = "<group>"; };
 		B09F6B1D34EF5C4731A69052 /* Pods-JLPushFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLPushFlow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JLPushFlow/Pods-JLPushFlow.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0788694D4E2EE41316BBC1 /* Pods-JLPushFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLPushFlow.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLPushFlow/Pods-JLPushFlow.release.xcconfig"; sourceTree = "<group>"; };
 		CBEDBCF7CA0AD22E328C88AD /* Pods-JLPushFlowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLPushFlowUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JLPushFlowUITests/Pods-JLPushFlowUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -49,8 +54,6 @@
 		F6451A27219AB22300DE90B1 /* JLPushFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLPushFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6451A2B219AB22300DE90B1 /* JLPushFlowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLPushFlowUITests.m; sourceTree = "<group>"; };
 		F6451A2D219AB22300DE90B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6451A37219AC02500DE90B1 /* SVProgressHUD+HUDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+HUDTools.h"; sourceTree = "<group>"; };
-		F6451A38219AC02500DE90B1 /* SVProgressHUD+HUDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+HUDTools.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A75E4263219AFE0300DEB32A /* Until */ = {
+			isa = PBXGroup;
+			children = (
+				A75E4270219B0A7E00DEB32A /* Thirds */,
+				A75E4264219AFE0300DEB32A /* Category */,
+			);
+			path = Until;
+			sourceTree = "<group>";
+		};
+		A75E4264219AFE0300DEB32A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A75E4265219AFE0300DEB32A /* SVProgressHUD+HUDTools.h */,
+				A75E4266219AFE0300DEB32A /* SVProgressHUD+HUDTools.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A75E426C219AFE7800DEB32A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6451A15219AB22100DE90B1 /* ViewController.h */,
+				F6451A16219AB22100DE90B1 /* ViewController.m */,
+				A75E426D219AFF7800DEB32A /* JLLiveVC.h */,
+				A75E426E219AFF7800DEB32A /* JLLiveVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A75E4270219B0A7E00DEB32A /* Thirds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thirds;
+			sourceTree = "<group>";
+		};
 		F6451A06219AB22100DE90B1 = {
 			isa = PBXGroup;
 			children = (
@@ -118,12 +157,9 @@
 			children = (
 				F6451A12219AB22100DE90B1 /* AppDelegate.h */,
 				F6451A13219AB22100DE90B1 /* AppDelegate.m */,
-				F6451A15219AB22100DE90B1 /* ViewController.h */,
-				F6451A16219AB22100DE90B1 /* ViewController.m */,
-				F6451A3C219AC11900DE90B1 /* Models */,
+				A75E426C219AFE7800DEB32A /* Controllers */,
+				A75E4263219AFE0300DEB32A /* Until */,
 				F6451A3B219AC11300DE90B1 /* Views */,
-				F6451A3A219AC0F900DE90B1 /* Controlers */,
-				F6451A3D219AC12400DE90B1 /* Until */,
 				F6451A18219AB22100DE90B1 /* Main.storyboard */,
 				F6451A1B219AB22300DE90B1 /* Assets.xcassets */,
 				F6451A1D219AB22300DE90B1 /* LaunchScreen.storyboard */,
@@ -142,42 +178,11 @@
 			path = JLPushFlowUITests;
 			sourceTree = "<group>";
 		};
-		F6451A36219ABFEA00DE90B1 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				F6451A37219AC02500DE90B1 /* SVProgressHUD+HUDTools.h */,
-				F6451A38219AC02500DE90B1 /* SVProgressHUD+HUDTools.m */,
-			);
-			name = Category;
-			sourceTree = "<group>";
-		};
-		F6451A3A219AC0F900DE90B1 /* Controlers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controlers;
-			sourceTree = "<group>";
-		};
 		F6451A3B219AC11300DE90B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		F6451A3C219AC11900DE90B1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F6451A3D219AC12400DE90B1 /* Until */ = {
-			isa = PBXGroup;
-			children = (
-				F6451A36219ABFEA00DE90B1 /* Category */,
-			);
-			name = Until;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,9 +346,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6451A17219AB22100DE90B1 /* ViewController.m in Sources */,
+				A75E426F219AFF7800DEB32A /* JLLiveVC.m in Sources */,
 				F6451A22219AB22300DE90B1 /* main.m in Sources */,
 				F6451A14219AB22100DE90B1 /* AppDelegate.m in Sources */,
-				F6451A39219AC02500DE90B1 /* SVProgressHUD+HUDTools.m in Sources */,
+				A75E4267219AFE0300DEB32A /* SVProgressHUD+HUDTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
