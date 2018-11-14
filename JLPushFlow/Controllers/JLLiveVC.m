@@ -16,8 +16,6 @@ static NSString *RTMP_URL = @"rtmp://192.168.1.8:1935/rtmplive/room";
 
 @property (nonatomic, strong) LFLiveSession *session;
 
-
-
 @end
 
 @implementation JLLiveVC
