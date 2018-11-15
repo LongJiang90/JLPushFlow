@@ -10,6 +10,7 @@
 #import <IJKMediaFramework/IJKFFOptions.h>
 #import <IJKMediaFramework/IJKMediaPlayer.h>
 #import <IJKMediaFramework/IJKFFMoviePlayerController.h>
+#import <IJKMediaFramework/IJKMediaFramework.h>
 
 //static NSString *RTMP_URL = @"rtmp://192.168.1.8:1935/rtmplive/room";
 static NSString *RTMP_URL = @"rtmp://172.0.0.181:1935/rtmplive/room";
@@ -19,6 +20,8 @@ static NSString *RTMP_URL = @"rtmp://172.0.0.181:1935/rtmplive/room";
 @property (nonatomic,strong) IJKFFOptions *options;
 @property (nonatomic,strong) IJKFFMoviePlayerController *player;
 
+@property (nonatomic, weak)  UIView *madieView;
+
 @end
 
 @implementation JLPlayerVC
@@ -27,8 +30,12 @@ static NSString *RTMP_URL = @"rtmp://172.0.0.181:1935/rtmplive/room";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.view addSubview:self.player.view];// 添加拉流预览视图
+    [self setupMadieView];
+    
+    [self.player prepareToPlay];
     [self.player play];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playStateDidChange:) name:IJKMPMoviePlayerPlaybackStateDidChangeNotification object:nil];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -45,6 +52,21 @@ static NSString *RTMP_URL = @"rtmp://172.0.0.181:1935/rtmplive/room";
 
 
 #pragma mark - 自定义方法
+//通过代理对象返回一个播放视频的view
+- (void)setupMadieView {
+    
+    //通过代理对象view返回一个MadieView
+    UIView *MadieView = [self.player view];
+    self.madieView = MadieView;
+    
+    //横竖屏适配
+    MadieView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    
+    MadieView.frame = self.view.frame;
+    
+    [self.view addSubview:MadieView];
+}
+
 //网络状态改变通知响应
 - (void)loadStateDidChange:(NSNotification *)notification{
     IJKMPMovieLoadState loadState = self.player.loadState;
@@ -61,25 +83,25 @@ static NSString *RTMP_URL = @"rtmp://172.0.0.181:1935/rtmplive/room";
     switch (_player.playbackState) {
             
         case IJKMPMoviePlaybackStateStopped:
-            NSLog(@"IJKMPMoviePlayBackStateDidChange %d: stoped", (int)_player.playbackState);
+            NSLog(@"--- %d: 停止", (int)_player.playbackState);
             break;
         case IJKMPMoviePlaybackStatePlaying:
-            NSLog(@"IJKMPMoviePlayBackStateDidChange %d: playing", (int)_player.playbackState);
+            NSLog(@"--- %d: 播放中", (int)_player.playbackState);
             break;
         case IJKMPMoviePlaybackStatePaused:
-            NSLog(@"IJKMPMoviePlayBackStateDidChange %d: paused", (int)_player.playbackState);
+            NSLog(@"--- %d: 暂停", (int)_player.playbackState);
             break;
         case IJKMPMoviePlaybackStateInterrupted:
-            NSLog(@"IJKMPMoviePlayBackStateDidChange %d: interrupted", (int)_player.playbackState);
+            NSLog(@"--- %d: 被打断", (int)_player.playbackState);
             break;
         case IJKMPMoviePlaybackStateSeekingForward:
         case IJKMPMoviePlaybackStateSeekingBackward: {
-            NSLog(@"IJKMPMoviePlayBackStateDidChange %d: seeking", (int)_player.playbackState);
+            NSLog(@"--- %d: 搜索中", (int)_player.playbackState);
             break;
         }
             
         default: {
-            NSLog(@"IJKMPMoviePlayBackStateDidChange %d: unknown", (int)_player.playbackState);
+            NSLog(@"--- %d: 未知错误", (int)_player.playbackState);
             break;
         }
     }
@@ -107,10 +129,10 @@ static NSString *RTMP_URL = @"rtmp://172.0.0.181:1935/rtmplive/room";
         _player.view.backgroundColor = [UIColor blackColor];
         _player.scalingMode = IJKMPMovieScalingModeAspectFill; //缩放模式
         _player.shouldAutoplay = YES; //开启自动播放（player准后后，自动播放）
-        [_player prepareToPlay];
     }
     return _player;
 }
+
 
 
 
