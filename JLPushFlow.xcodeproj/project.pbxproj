@@ -11,8 +11,8 @@
 		A75E426F219AFF7800DEB32A /* JLLiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E426E219AFF7800DEB32A /* JLLiveVC.m */; };
 		CAA51AB1B732E167948EDCBB /* libPods-JLPushFlowUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0154B644D84373BBF60EAA8 /* libPods-JLPushFlowUITests.a */; };
 		F641FA61219BEEF80022D074 /* SVProgressHUD+HUDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F641FA5F219BEEF80022D074 /* SVProgressHUD+HUDTools.m */; };
+		F641FA64219C139D0022D074 /* JLPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F641FA63219C139D0022D074 /* JLPlayerVC.m */; };
 		F6451A14219AB22100DE90B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6451A13219AB22100DE90B1 /* AppDelegate.m */; };
-		F6451A17219AB22100DE90B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6451A16219AB22100DE90B1 /* ViewController.m */; };
 		F6451A1A219AB22100DE90B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6451A18219AB22100DE90B1 /* Main.storyboard */; };
 		F6451A1C219AB22300DE90B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6451A1B219AB22300DE90B1 /* Assets.xcassets */; };
 		F6451A1F219AB22300DE90B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6451A1D219AB22300DE90B1 /* LaunchScreen.storyboard */; };
@@ -41,11 +41,11 @@
 		E0154B644D84373BBF60EAA8 /* libPods-JLPushFlowUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLPushFlowUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F641FA5F219BEEF80022D074 /* SVProgressHUD+HUDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SVProgressHUD+HUDTools.m"; path = "JLPushFlow/SVProgressHUD+HUDTools.m"; sourceTree = SOURCE_ROOT; };
 		F641FA60219BEEF80022D074 /* SVProgressHUD+HUDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SVProgressHUD+HUDTools.h"; path = "JLPushFlow/SVProgressHUD+HUDTools.h"; sourceTree = SOURCE_ROOT; };
+		F641FA62219C139D0022D074 /* JLPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLPlayerVC.h; sourceTree = "<group>"; };
+		F641FA63219C139D0022D074 /* JLPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLPlayerVC.m; sourceTree = "<group>"; };
 		F6451A0F219AB22100DE90B1 /* JLPushFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLPushFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6451A12219AB22100DE90B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6451A13219AB22100DE90B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F6451A15219AB22100DE90B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F6451A16219AB22100DE90B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F6451A19219AB22100DE90B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6451A1B219AB22300DE90B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6451A1E219AB22300DE90B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,10 +117,10 @@
 		A75E426C219AFE7800DEB32A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F6451A15219AB22100DE90B1 /* ViewController.h */,
-				F6451A16219AB22100DE90B1 /* ViewController.m */,
 				A75E426D219AFF7800DEB32A /* JLLiveVC.h */,
 				A75E426E219AFF7800DEB32A /* JLLiveVC.m */,
+				F641FA62219C139D0022D074 /* JLPlayerVC.h */,
+				F641FA63219C139D0022D074 /* JLPlayerVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -345,10 +345,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6451A17219AB22100DE90B1 /* ViewController.m in Sources */,
 				F641FA61219BEEF80022D074 /* SVProgressHUD+HUDTools.m in Sources */,
 				A75E426F219AFF7800DEB32A /* JLLiveVC.m in Sources */,
 				F6451A22219AB22300DE90B1 /* main.m in Sources */,
+				F641FA64219C139D0022D074 /* JLPlayerVC.m in Sources */,
 				F6451A14219AB22100DE90B1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73LQSTB9J3;
 				INFOPLIST_FILE = JLPushFlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,6 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73LQSTB9J3;
 				INFOPLIST_FILE = JLPushFlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

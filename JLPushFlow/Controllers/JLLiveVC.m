@@ -10,7 +10,8 @@
 #import "LFLiveKit.h"
 
 
-static NSString *RTMP_URL = @"rtmp://192.168.1.8:1935/rtmplive/room";
+//static NSString *RTMP_URL = @"rtmp://192.168.1.8:1935/rtmplive/room";
+static NSString *RTMP_URL = @"rtmp://172.0.0.181:1935/rtmplive/room";
 
 @interface JLLiveVC ()<LFLiveSessionDelegate>
 
@@ -28,10 +29,6 @@ static NSString *RTMP_URL = @"rtmp://192.168.1.8:1935/rtmplive/room";
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self startLive];
     });
-    
-    
-    
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
