@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F07B951AFBC57BC083D3F2E /* libPods-JLPushFlow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91966C1ABEA6E51CA60501D3 /* libPods-JLPushFlow.a */; };
+		A707140621A2F96A002444F5 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A707140521A2F96A002444F5 /* HomeVC.m */; };
 		A758E95F219DAA3B006909F8 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A758E95E219DAA3B006909F8 /* IJKMediaFramework.framework */; };
 		A758E962219DABBC006909F8 /* SVProgressHUD+HUDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = A758E960219DABBC006909F8 /* SVProgressHUD+HUDTools.m */; };
 		A75E426F219AFF7800DEB32A /* JLLiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E426E219AFF7800DEB32A /* JLLiveVC.m */; };
@@ -34,6 +35,9 @@
 /* Begin PBXFileReference section */
 		7C6B1B85BE8FDE8F88DD72CF /* Pods-JLPushFlowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLPushFlowUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLPushFlowUITests/Pods-JLPushFlowUITests.release.xcconfig"; sourceTree = "<group>"; };
 		91966C1ABEA6E51CA60501D3 /* libPods-JLPushFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLPushFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A707140421A2F96A002444F5 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		A707140521A2F96A002444F5 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		A707140721A2FCD2002444F5 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		A758E95E219DAA3B006909F8 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		A758E960219DABBC006909F8 /* SVProgressHUD+HUDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+HUDTools.m"; sourceTree = "<group>"; };
 		A758E961219DABBC006909F8 /* SVProgressHUD+HUDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+HUDTools.h"; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 		A75E426C219AFE7800DEB32A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A707140421A2F96A002444F5 /* HomeVC.h */,
+				A707140521A2F96A002444F5 /* HomeVC.m */,
 				A75E426D219AFF7800DEB32A /* JLLiveVC.h */,
 				A75E426E219AFF7800DEB32A /* JLLiveVC.m */,
 				F641FA62219C139D0022D074 /* JLPlayerVC.h */,
@@ -132,6 +138,7 @@
 		A75E4270219B0A7E00DEB32A /* Thirds */ = {
 			isa = PBXGroup;
 			children = (
+				A707140721A2FCD2002444F5 /* Defines.h */,
 			);
 			path = Thirds;
 			sourceTree = "<group>";
@@ -352,6 +359,7 @@
 				A75E426F219AFF7800DEB32A /* JLLiveVC.m in Sources */,
 				A758E962219DABBC006909F8 /* SVProgressHUD+HUDTools.m in Sources */,
 				F6451A22219AB22300DE90B1 /* main.m in Sources */,
+				A707140621A2F96A002444F5 /* HomeVC.m in Sources */,
 				F641FA64219C139D0022D074 /* JLPlayerVC.m in Sources */,
 				F6451A14219AB22100DE90B1 /* AppDelegate.m in Sources */,
 			);

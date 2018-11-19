@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if (!mainSB) {
+        mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    }
+    
+    
     return YES;
 }
 

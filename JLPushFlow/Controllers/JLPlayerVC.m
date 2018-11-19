@@ -47,9 +47,9 @@ static NSString *RTMP_URL = @"rtmp://172.0.0.181:1935/rtmplive/room";
 
 #pragma mark - 按钮响应函数
 
-
 #pragma mark - 协议函数
 
+#pragma mark - 网络请求
 
 #pragma mark - 自定义方法
 //通过代理对象返回一个播放视频的view
