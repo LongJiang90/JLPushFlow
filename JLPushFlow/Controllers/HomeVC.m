@@ -9,7 +9,6 @@
 #import "HomeVC.h"
 #import "JLLiveVC.h"
 #import "JLPlayerVC.h"
-#import "Defines.h"
 
 @interface HomeVC ()
 
@@ -22,6 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"%@", [[[UIDevice currentDevice] identifierForVendor] UUIDString]);
+    
+
+    
 }
 
 #pragma mark - 按钮响应函数

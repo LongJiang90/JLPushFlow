@@ -47,6 +47,7 @@
 		BA0788694D4E2EE41316BBC1 /* Pods-JLPushFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLPushFlow.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLPushFlow/Pods-JLPushFlow.release.xcconfig"; sourceTree = "<group>"; };
 		CBEDBCF7CA0AD22E328C88AD /* Pods-JLPushFlowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLPushFlowUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JLPushFlowUITests/Pods-JLPushFlowUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0154B644D84373BBF60EAA8 /* libPods-JLPushFlowUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLPushFlowUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63DB9E221A65520007DFB41 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F641FA62219C139D0022D074 /* JLPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLPlayerVC.h; sourceTree = "<group>"; };
 		F641FA63219C139D0022D074 /* JLPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLPlayerVC.m; sourceTree = "<group>"; };
 		F6451A0F219AB22100DE90B1 /* JLPushFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLPushFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +177,7 @@
 				F6451A1D219AB22300DE90B1 /* LaunchScreen.storyboard */,
 				F6451A20219AB22300DE90B1 /* Info.plist */,
 				F6451A21219AB22300DE90B1 /* main.m */,
+				F63DB9E221A65520007DFB41 /* PrefixHeader.pch */,
 			);
 			path = JLPushFlow;
 			sourceTree = "<group>";
@@ -321,10 +323,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JLPushFlow/Pods-JLPushFlow-resources.sh",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/XLForm/XLForm/XLForm.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/XLForm.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -526,6 +530,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/JLPushFlow/PrefixHeader.pch";
 				INFOPLIST_FILE = JLPushFlow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -549,6 +554,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/JLPushFlow/PrefixHeader.pch";
 				INFOPLIST_FILE = JLPushFlow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

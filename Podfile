@@ -8,11 +8,12 @@ target 'JLPushFlow' do
   # Pods for JLPushFlow
   pod 'LFLiveKit'
   pod 'SHBIJKMediaFramework'
-  
+  pod 'KSCrash'
   pod 'SVProgressHUD'
   pod 'Masonry'
+  pod 'XLForm', '~> 4.0'
   
-
+  
   target 'JLPushFlowUITests' do
     inherit! :search_paths
     # Pods for testing

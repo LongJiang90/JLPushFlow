@@ -7,6 +7,7 @@
 //
 
 #ifdef __OBJC__
+#import "AppDelegate.h"
 
 
 #define appDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
